@@ -1,0 +1,13 @@
+{
+  "name": "cypresstest",
+  "version": "1.0.0",
+  "description": "Cypress Boilerplate",
+  "main": "index.js",
+  "repository": "git@github.com:shor-tcut/cypresstest.git",
+  "author": "Max Atslega <max@atslega.dev>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "cypress": "^12.16.0"
+  }
+}
