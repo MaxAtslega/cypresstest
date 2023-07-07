@@ -9,5 +9,8 @@
   "private": true,
   "devDependencies": {
     "cypress": "^12.16.0"
+  },
+  "scripts": {
+    "start": "yarn run cypress open"
   }
 }
