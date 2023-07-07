@@ -1,10 +1,10 @@
 describe('shortcut website', () => {
   it('should cookie', () => {
-    cy.visit('/').get('.save-button').click();
+    cy.visit('https://shor.tcut.de/de').get('.save-button').click();
   });
 
   it('should select to english', () => {
-    cy.visit('/')
+    cy.visit('https://shor.tcut.de/de')
     cy.get('.save-button').click();
 
     cy.get('#mobileLanguage .language-switcher').click()
@@ -12,7 +12,7 @@ describe('shortcut website', () => {
   });
 
   it('should banner image', () => {
-    cy.visit('/')
+    cy.visit('https://shor.tcut.de/de')
     cy.get('.save-button').click();
 
     cy.get('.mobile-Banner').scrollIntoView()
@@ -24,7 +24,7 @@ describe('shortcut website', () => {
   });
 
   it('contact form', () => {
-    cy.visit('/')
+    cy.visit('https://shor.tcut.de/de')
     cy.get('.save-button').click();
 
     cy.get('.form-load-button').click().should("have.text", "X")
@@ -32,7 +32,7 @@ describe('shortcut website', () => {
   });
 
   it('should footer', () => {
-    cy.visit('/')
+    cy.visit('https://shor.tcut.de/de')
     cy.get('.save-button').click();
 
     cy.get('.footer-container a[href*="/de/datenschutz"]').click()
